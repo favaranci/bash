@@ -3,4 +3,4 @@
 docker="/usr/bin/docker"
 varlibdocker=$(df -h /var/lib/docker | awk 'NR==2{print $5,$6}')
 "$docker" system prune -f -a
-echo "el espacio actual del filesystem /var/lib/docker es de: $varlibdocker"})
+echo "the currently space for /var/lib/docker directory is: $varlibdocker"})
